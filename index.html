@@ -3,120 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Aaliyah Angelica Marial | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-grid"></div>
+  <div class="page-bg"></div>
 
   <header class="navbar">
-    <div class="logo">My<span>Portfolio</span></div>
-    <nav>
+    <a href="#home" class="logo">Aaliyah<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn nav-btn">Let's Talk</a>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <span id="themeIcon">☀️</span>
+      </button>
+      <a href="#contact" class="nav-btn">Let's Talk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-text">
-        <div class="badge">● Available for freelance work</div>
-        <p class="intro">Hello, I'm</p>
-        <h1>Your Name</h1>
-        <h2>Web Developer / UI Designer</h2>
-        <p class="description">
-          I design and build clean, modern, high-performance digital experiences.
-          I turn ideas into elegant and user-friendly websites and interfaces.
+    <section class="hero section-padding" id="home">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span></span>
+          Available for projects
+        </div>
+
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Aaliyah Angelica Marial</h1>
+        <h2>BSIT Student, Web Developer, and UI/UX Designer</h2>
+
+        <p class="hero-description">
+          I create clean, responsive, and user-friendly digital experiences.
+          I enjoy turning ideas into websites and interfaces that look good,
+          work smoothly, and make sense to real users.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View My Work</a>
-          <a href="#contact" class="btn secondary">Get in Touch</a>
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
         </div>
 
-        <div class="stats">
-          <div class="stat-box">
-            <h3>10+</h3>
-            <p>Projects Completed</p>
+        <div class="hero-stats">
+          <div>
+            <h3>BSIT</h3>
+            <p>Student</p>
           </div>
-          <div class="stat-box">
-            <h3>2+</h3>
-            <p>Years Learning</p>
+          <div>
+            <h3>Web</h3>
+            <p>Development</p>
           </div>
-          <div class="stat-box">
-            <h3>5+</h3>
-            <p>Technologies Used</p>
+          <div>
+            <h3>UI/UX</h3>
+            <p>Design Focus</p>
           </div>
         </div>
       </div>
 
-      <div class="hero-image">
-        <div class="image-ring">
-          <img src="images/profile.png" alt="Profile Photo" />
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <img src="images/profile.png" alt="Aaliyah Angelica Marial" />
+        </div>
+
+        <div class="floating-card card-one">HTML</div>
+        <div class="floating-card card-two">CSS</div>
+        <div class="floating-card card-three">JS</div>
+      </div>
+    </section>
+
+    <section class="about section-padding" id="about">
+      <div class="section-heading">
+        <p>About Me</p>
+        <h2>Design-minded. Code-focused. Always learning.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <p>
+            I’m Aaliyah Angelica Marial, a BSIT student with a strong interest in
+            web development and UI/UX design. I like building websites that are
+            simple to use, visually clean, and responsive across different devices.
+          </p>
+
+          <p>
+            My goal is to keep improving as a developer and designer by creating
+            projects that solve real problems, support users, and show both
+            creativity and technical skill.
+          </p>
+        </div>
+
+        <div class="about-card highlight-card">
+          <h3>What I focus on</h3>
+          <ul>
+            <li>Clean and modern website design</li>
+            <li>Responsive layouts for mobile and desktop</li>
+            <li>User-friendly interfaces</li>
+            <li>Simple, readable, and organized code</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-text">
-        I’m a passionate developer who enjoys creating clean, responsive, and user-focused websites.
-        I love combining design and code to build experiences that are both functional and visually appealing.
-      </p>
-    </section>
+    <section class="skills section-padding" id="skills">
+      <div class="section-heading">
+        <p>Skills</p>
+        <h2>Technologies and tools I use</h2>
+      </div>
 
-    <section class="section" id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="card-grid">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Git & GitHub</div>
-        <div class="card">Responsive Design</div>
-        <div class="card">UI/UX Design</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, Responsive Design</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Design</h3>
+          <p>UI/UX Design, Wireframing, Layout Design, Prototyping</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>PHP, MySQL, C++, Basic JavaScript Logic</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>VS Code, Git, GitHub, Figma, XAMPP</p>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2 class="section-title">Projects</h2>
+    <section class="projects section-padding" id="projects">
+      <div class="section-heading">
+        <p>Projects</p>
+        <h2>Selected work and academic projects</h2>
+      </div>
+
       <div class="projects-grid">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>A modern website project with responsive design and clean UI.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>A portfolio or web application showcasing frontend development skills.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-          <h3>Project Three</h3>
-          <p>A creative project focused on interaction, design, and user experience.</p>
-          <a href="#">View Project</a>
-        </div>
+        <article class="project-card">
+          <div class="project-tag">Web Portfolio</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A clean and modern portfolio website built with HTML, CSS, and JavaScript.
+            It showcases my skills, projects, contact details, and GitHub profile.
+          </p>
+          <a href="https://github.com/marialaaliyahangelica-web/portfolio-website" target="_blank">
+            View Repository
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Web System</div>
+          <h3>PHP and MySQL Web System</h3>
+          <p>
+            A web-based system project using PHP and MySQL with user authentication,
+            password hashing, and database management.
+          </p>
+          <a href="https://github.com/marialaaliyahangelica-web" target="_blank">
+            View GitHub
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">UI/UX</div>
+          <h3>Responsive Interface Design</h3>
+          <p>
+            A design-focused project that applies layout planning, visual hierarchy,
+            mobile responsiveness, and user-centered interface design.
+          </p>
+          <a href="#contact">
+            Ask Me About It
+          </a>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-text">
-        Let’s work together. You can reach me through email or my GitHub.
-      </p>
+    <section class="contact section-padding" id="contact">
+      <div class="contact-box">
+        <div>
+          <p class="contact-label">Contact</p>
+          <h2>Let’s build something clean and useful.</h2>
+          <p>
+            You can reach me through email or check my work on GitHub.
+          </p>
+        </div>
 
-      <div class="contact-links">
-        <a href="mailto:your@email.com" class="btn primary">Email Me</a>
-        <a href="https://github.com/yourusername" target="_blank" class="btn secondary">GitHub</a>
+        <div class="contact-actions">
+          <a href="mailto:aaliyahangelica123@gmail.com" class="btn primary-btn">
+            Email Me
+          </a>
+          <a href="https://github.com/marialaaliyahangelica-web" target="_blank" class="btn secondary-btn">
+            GitHub Profile
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
+    <p>© 2026 Aaliyah Angelica Marial. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
