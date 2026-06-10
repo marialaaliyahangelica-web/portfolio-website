@@ -1123,3 +1123,43 @@ body {
   color: var(--blue) !important;
   font-weight: 600;
 }
+
+/* ===== DARK MODE LOGO VISIBILITY FIX ===== */
+
+.skill-logo-item {
+  width: 74px;
+  height: 74px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  transition: 0.25s ease;
+}
+
+body.dark .skill-logo-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill-logo-item img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Make black logos visible in dark mode */
+body.dark .skill-logo-item[aria-label="GitHub"] img,
+body.dark .skill-logo-item[aria-label="Canva"] img,
+body.dark .skill-logo-item[aria-label="Supabase"] img,
+body.dark .skill-logo-item[aria-label="XAMPP"] img {
+  filter: invert(1) brightness(1.8);
+}
+
+/* Keep hover effect clean */
+.skill-logo-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.skill-logo-item:hover img {
+  transform: scale(1.08);
+}
